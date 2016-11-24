@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+ 
+
+   <script src="js/jQ.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script>
+ <script src="js/script.js"></script>
+</head>
+<body>
+	<script type="text/html" id="0">
+		 <div class="wrapper">
+		 	<p class="header">Тест по программированию</p>
+		 	<%for(var i=0;i<list.length;++i){%> 
+			 	<div class="questBox">
+			          <p class="questTxt"><%=(i+1)%>)  <%=list[i].question_text%></p>
+			      
+			          <form action="" class="testForm">
+			          <%for(var j=0;j<list[i].ansvers.length;++j){%>
+							<input type="checkbox" class="inp" id=<%=''+i+''+j%> name=<%=i+'name'%> >
+							<label for=<%=''+i%> class="inp_label"><%=list[i].ansvers[j]%></label>
+				      <%};%>
+			          </form>
+			 	</div>
+			 <%}%>	
+ 			<button class="Button">Проверить мои результаты!</button>
+		 </div> 
+	</script>
+
+
+	<script type="text/html" id="modal_window">
+		 <div class="overlay">
+			<div class="window">
+		 	<p>Всего  <%=test_result.length%>  вопросов. Верных ответов на вопросы: <%=you_res%>!</p>
+		 	<button class="" id="closeModal">ok</button>
+	        </div>
+	    </div>
+	</script>
+</body>
+</html>

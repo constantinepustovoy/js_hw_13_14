@@ -1,0 +1,88 @@
+*{
+  margin:0;
+  padding:0;
+
+}
+body{
+  background-color: #aaa;
+}
+.wrapper{
+  margin:50px auto;
+  width: 800px;
+  background-color: #fff;
+  padding-bottom:50px;
+
+}
+.header{
+  display:block;
+  margin: 0px auto;
+  padding:20px;
+  width: 220px;
+}
+.questBox{
+  float:left;
+    margin: 50px  0px  100px 100px;
+  width: 70%;
+  height:130px;
+  
+}
+
+.inp{
+  float: left;
+  clear: left;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.inp_label{
+  display: block;
+  position: relative;
+  top:5px;
+  margin:15px 0px 0px 40px;
+}
+.Lastform{
+  margin:0 auto;
+  width:300px;
+}
+.Button{
+  display:block;
+  margin:100px auto  0px auto;
+  padding:3px 40px; 
+}
+/***********WINDOW********/
+.window{
+  width:400px;
+  height:150px;
+  position:fixed;
+  top:50%;margin-top:-75px;
+  left:50%; margin-left:-200px;
+  z-index: 2;
+  background-color: #FFFFFF;
+  /*border:1px solid #aaa;*/
+   border-radius: 5px; 
+       box-shadow: 0 0 10px rgba(0,0,0,1);
+
+}
+.window p{
+  width: 350px;
+  display:block;
+  margin:50px auto 0px auto;
+
+}
+
+.overlay{
+  width:100%;
+  position:fixed;
+  height:10000px;
+  z-index:1;
+  background-color: rgba(0,0,0,0.5);
+  top:0;
+  visibility:hidden;
+}
+#closeModal{
+
+    display:block;
+  margin:30px auto  0px auto;
+  padding:3px 40px;
+  border-radius: 5px; 
+  background-color: #FBFBFB;
+}
